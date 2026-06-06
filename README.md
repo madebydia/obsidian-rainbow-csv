@@ -45,5 +45,5 @@ MIT
 
 ## Author
 
-Mei Park  
-[github.com/meimakes](https://github.com/meimakes)
+Diana Park
+[github.com/madebydia](https://github.com/madebydia)
