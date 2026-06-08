@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "minAppVersion": "0.15.0",
   "description": "Color-code CSV columns in edit mode, render as spreadsheet table in preview mode.",
-  "author": "Diana Park",
+  "author": "Diana",
   "authorUrl": "https://github.com/madebydia",
   "isDesktopOnly": false
 }

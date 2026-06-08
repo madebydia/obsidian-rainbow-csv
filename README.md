@@ -45,5 +45,5 @@ MIT
 
 ## Author
 
-Diana Park
+Diana
 [github.com/madebydia](https://github.com/madebydia)
