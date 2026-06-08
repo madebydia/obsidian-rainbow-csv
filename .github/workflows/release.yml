@@ -20,9 +20,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$TAG" \
-            --title="$TAG" \
-            --generate-notes \
-            main.js \
-            manifest.json \
-            styles.css
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" \
+              main.js \
+              manifest.json \
+              styles.css \
+              --clobber
+          else
+            gh release create "$TAG" \
+              --title="$TAG" \
+              --generate-notes \
+              main.js \
+              manifest.json \
+              styles.css
+          fi
